@@ -1,6 +1,6 @@
-import { NoDatabaseSpecified, NoNamespaceSpecified } from "../errors.ts";
-import { AnyAuth } from "../types.ts";
-import { isNil } from "./isNil.ts";
+import { NoDatabaseSpecified, NoNamespaceSpecified } from "../errors.js";
+import { AnyAuth } from "../types.js";
+import { isNil } from "./isNil.js";
 
 export function processAuthVars<T extends AnyAuth>(vars: T, fallback?: {
 	namespace?: string;

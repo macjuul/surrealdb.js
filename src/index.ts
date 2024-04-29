@@ -1,16 +1,16 @@
-export { Surreal, Surreal as default } from "./surreal.ts";
+export { Surreal } from "./surreal.js";
 export {
 	ConnectionStatus,
 	Engine,
 	type EngineEvents,
-} from "./library/engine.ts";
+} from "./library/engine.js";
 export {
 	Emitter,
 	type Listener,
 	type UnknownEvents,
-} from "./library/emitter.ts";
-export * from "./library/cbor/index.ts";
-export { surql, surrealql } from "./library/tagged-template.ts";
-export { PreparedQuery } from "./library/PreparedQuery.ts";
-export * from "./errors.ts";
-export * from "./types.ts";
+} from "./library/emitter.js";
+export * from "./library/cbor/index.js";
+export { surql, surrealql } from "./library/tagged-template.js";
+export { PreparedQuery } from "./library/PreparedQuery.js";
+export * from "./errors.js";
+export * from "./types.js";

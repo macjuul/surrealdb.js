@@ -1,22 +1,22 @@
-import { z } from "npm:zod";
-import { Emitter } from "./emitter.ts";
-import { getIncrementalID } from "./getIncrementalID.ts";
-import WebSocket from "./WebSocket/deno.ts";
-import { decodeCbor, encodeCbor } from "./cbor/index.ts";
+import { z } from "zod";
+import { Emitter } from "./emitter.js";
+import { getIncrementalID } from "./getIncrementalID.js";
+import WebSocket from "./WebSocket/deno.js";
+import { decodeCbor, encodeCbor } from "./cbor/index.js";
 import {
 	Action,
 	LiveResult,
 	Patch,
 	RpcRequest,
 	RpcResponse,
-} from "../types.ts";
+} from "../types.js";
 import {
 	ConnectionUnavailable,
 	EngineDisconnected,
 	ResponseError,
 	UnexpectedConnectionError,
 	UnexpectedServerResponse,
-} from "../errors.ts";
+} from "../errors.js";
 
 export type EngineEvents = {
 	connecting: [];

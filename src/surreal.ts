@@ -6,15 +6,15 @@ import {
 	NoTokenReturned,
 	ResponseError,
 	UnsupportedEngine,
-} from "./errors.ts";
-import { PreparedQuery } from "./library/PreparedQuery.ts";
-import { Pinger } from "./library/Pinger.ts";
-import { EngineEvents } from "./library/engine.ts";
-import { Engine, HttpEngine, WebsocketEngine } from "./library/engine.ts";
-import { RecordId } from "./library/cbor/recordid.ts";
-import { Emitter } from "./library/emitter.ts";
-import { processAuthVars } from "./library/processAuthVars.ts";
-import type { UUID } from "./library/cbor/uuid.ts";
+} from "./errors.js";
+import { PreparedQuery } from "./library/PreparedQuery.js";
+import { Pinger } from "./library/Pinger.js";
+import { EngineEvents } from "./library/engine.js";
+import { Engine, HttpEngine, WebsocketEngine } from "./library/engine.js";
+import { RecordId } from "./library/cbor/recordid.js";
+import { Emitter } from "./library/emitter.js";
+import { processAuthVars } from "./library/processAuthVars.js";
+import type { UUID } from "./library/cbor/uuid.js";
 import {
 	Action,
 	type ActionResult,
@@ -28,8 +28,8 @@ import {
 	ScopeAuth,
 	Token,
 	TransformAuth,
-} from "./types.ts";
-import { ConnectionStatus } from "./library/engine.ts";
+} from "./types.js";
+import { ConnectionStatus } from "./library/engine.js";
 
 type Engines = Record<string, new (emitter: Emitter<EngineEvents>) => Engine>;
 type R = Prettify<Record<string, unknown>>;

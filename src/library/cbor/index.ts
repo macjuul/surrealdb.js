@@ -2,15 +2,15 @@ import {
 	decode as decode_cbor,
 	encode as encode_cbor,
 	TaggedValue,
-} from "npm:cbor-redux@1.0.0";
-import { RecordId } from "./recordid.ts";
-import { UUID, uuidv4, uuidv7 } from "./uuid.ts";
+} from "cbor-redux";
+import { RecordId } from "./recordid.js";
+import { UUID, uuidv4, uuidv7 } from "./uuid.js";
 import {
 	cborCustomDurationToDuration,
 	Duration,
 	durationToCborCustomDuration,
-} from "./duration.ts";
-import { Decimal } from "./decimal.ts";
+} from "./duration.js";
+import { Decimal } from "./decimal.js";
 import {
 	GeometryCollection,
 	GeometryLine,
@@ -19,9 +19,9 @@ import {
 	GeometryMultiPolygon,
 	GeometryPoint,
 	GeometryPolygon,
-} from "./geometry.ts";
-import { Table } from "./table.ts";
-import { cborCustomDateToDate, dateToCborCustomDate } from "./datetime.ts";
+} from "./geometry.js";
+import { Table } from "./table.js";
+import { cborCustomDateToDate, dateToCborCustomDate } from "./datetime.js";
 
 // Tags from the spec - https://www.iana.org/assignments/cbor-tags/cbor-tags.xhtml
 const TAG_SPEC_DATETIME = 0;

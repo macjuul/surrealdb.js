@@ -1,4 +1,4 @@
-import { Duration } from "npm:@icholy/duration@^5.1.0";
+import { Duration } from "@icholy/duration";
 export { Duration };
 
 export function durationToCborCustomDuration(duration: Duration) {

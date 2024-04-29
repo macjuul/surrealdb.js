@@ -1,0 +1,52 @@
+{
+	"name": "surrealdb.js",
+	"version": "1.0.0-beta.5",
+	"description": "Javascript driver for SurrealDB",
+	"license": "Apache 2.0",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/surrealdb/surrealdb.js.git"
+	},
+	"author": {
+		"name": "Tobie Morgan Hitchcock",
+		"url": "https://surrealdb.com"
+	},
+	"files": [
+		"dist"
+	],
+	"main": "./dist/surrealdb.umd.cjs",
+	"module": "./dist/surrealdb.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"import": "./dist/surrealdb.js",
+		"require": "./dist/surrealdb.umd.cjs"
+	},
+	"scripts": {
+		"test": "vitest",
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"@types/ws": "^8.5.4",
+		"vite": "^5.2.10",
+		"vite-dts": "^1.0.4",
+		"vite-plugin-dts": "^3.9.0"
+	},
+	"dependencies": {
+		"@icholy/duration": "^5.1.0",
+		"cbor-redux": "^1.0.0",
+		"decimal.js": "^10.4.3",
+		"isows": "^1.0.4",
+		"uuidv7": "^0.6.3",
+		"ws": "^8.16.0"
+	},
+	"optionalDependencies": {
+		"bufferutil": "^4.0.8",
+		"utf-8-validate": "^6.0.3"
+	},
+	"peerDependencies": {
+		"zod": "^3.20.2"
+	}
+}

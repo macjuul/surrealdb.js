@@ -1,7 +1,7 @@
-import { z } from "npm:zod";
-import { RecordId } from "./library/cbor/recordid.ts";
-import { Surreal } from "./surreal.ts";
-import { UUID } from "./library/cbor/uuid.ts";
+import { z } from "zod";
+import { RecordId } from "./library/cbor/recordid.js";
+import { Surreal } from "./surreal.js";
+import { UUID } from "./library/cbor/uuid.js";
 
 export const UseOptions = z.object({
 	namespace: z.coerce.string(),
